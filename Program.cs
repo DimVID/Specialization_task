@@ -3,15 +3,13 @@
 // либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, 
 // лучше обойтись исключительно массивами.
 // Примеры:
-// ["hello", "2"    , "world", ":-)"] -> ["2", ":-)"]
-
+// ["hello", "2", "world", ":-)"] -> ["2", ":-)"]
 // ["1234", "1567", "-2", "computer science"] -> ["-2"]
-
 // ["Russia", "Denmark", "Kazan"] -> []
 
-string[] array1 = new string[5] {"123", "23", "hello", "world", "res"};
+string[] array1 = new string[7] {"hello", "1234", "Russia", ":-)", "7", "+-=", "DI"};
 string[] array2 = new string[array1.Length];
-void SecondArrayWithIF(string[] array1, string[] array2)
+void SecondArrayWith3Symbol(string[] array1, string[] array2)
 {
     int count = 0;
     for (int i = 0; i < array1.Length; i++)
@@ -27,11 +25,11 @@ void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        Console.Write($"{array[i]}\t");
     }
     Console.WriteLine();
 }
-SecondArrayWithIF(array1, array2);
+SecondArrayWith3Symbol(array1, array2);
 PrintArray(array2);
 
 
